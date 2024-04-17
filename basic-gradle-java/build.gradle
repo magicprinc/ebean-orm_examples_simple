@@ -38,10 +38,11 @@ dependencies {
   errorprone("com.google.errorprone:error_prone_core:latest.release")
   implementation "com.google.code.findbugs:jsr305:latest.release"	// https://javadoc.io/doc/com.google.code.findbugs/jsr305/latest/index.html
 
-  implementation "io.ebean:ebean:latest.release"
+  testImplementation "io.ebean:ebean:latest.release"
 
   // apt query bean generation
   annotationProcessor 'io.ebean:querybean-generator:latest.release'
+  testAnnotationProcessor 'io.ebean:querybean-generator:latest.release'
 
 
   testImplementation 'org.junit.jupiter:junit-jupiter:latest.release'
